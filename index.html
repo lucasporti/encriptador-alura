@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Encriptador de texto</title>
+</head>
+<body class="bg-slate-200">
+  <header class="flex mt-6">
+    <img class="w-28" src="assets/logo.png" alt="alura-logo">
+  </header>
+  <main class="flex justify-evenly mt-9">
+    <div class="flex flex-col w-5/12">
+      <textarea class="mt-9 text-xl font-bold text-blue-900 text-center text-lg rounded-2xl bg-slate-200" name="texto" id="texto" style="resize:none;" cols="80" rows="12" placeholder="Ingrese el texto aqui"></textarea>
+      <p class="mt-5 text-xs">! Solo letras minusculas y sin tildes.</p>
+      <div class="flex justify-center gap-10 mt-3">
+        <button class="w-full bg-blue-950 text-white px-20 py-3 rounded-2xl border border-solid border-blue-950 hover:bg-blue-900" id="encriptar">Encriptar</button>
+        <button class="w-full bg-gray-300 text-blue-900 px-20 py-3 rounded-2xl border border-blue-950 hover:bg-gray-200" id="desencriptar">Desencriptar</button>
+      </div>
+    </div>
+      <div class="w-72 bg-slate-100 flex justify-center items-center flex-col rounded-2xl shadow-lg" id="mensaje-final">
+        <img src="assets/muñeco.png" alt="" class="w-72 h-64 item">
+        <p id="mensaje" class="text-xl w-2/3 text-center font-bold item">Ningún mensaje fue encontrado</p>
+        <p class="w-2/3 text-center mt-1 text-xs item" id="texto-encriptado">Ingresa el texto que desees encriptar o desencriptar.</p>
+      </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
